@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealnav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myapplication.UI.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/send"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/viewfav"
+            app:destination="@id/viewFavourites2" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.myapplication.UI.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="Name"
+            app:argType="string" />
+        <action
+            android:id="@+id/viewfav"
+            app:destination="@id/viewFavourites2" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFavourites2"
+        android:name="com.example.myapplication.UI.ViewFavourites"
+        android:label="fragment_view_favourites"
+        tools:layout="@layout/fragment_view_favourites" />
+</navigation>
