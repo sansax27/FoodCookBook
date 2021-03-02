@@ -9,4 +9,5 @@ The project contains three parts :-
 2. Newtwork :- The class in it-MealAPIService.kt serves the purpose of connecting to api, retrieving json and making it available to app.
 3. Data :- This section of app is like cpu of the whole app. As can be easily inferred from the names from the corresponding classes, it contains view models for each fragment, view model factory where needed, DataBase, Data Class of MealDetail to store, Database Access Object for the Database, Custom Adapter for recycler view in Second Fragment, Custom Adapter1 for recycler view in Third Fragment. The names and the architecture used in the app itself makes clear the purpose of each of these classes.
 At last, as in every project, these 3 parts are integrated. In data part, Repository layer could have been used, but in this case, for each usecase either api or database is the source of Truth, therefore, that layer has not been made.
+
 See the code once and everything would be clear! In case of any doubt, contact me!
