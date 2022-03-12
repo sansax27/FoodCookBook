@@ -4,7 +4,7 @@ This project is an implementation of the app, which serves the following purpose
 2. Let's user search food by name
 3. Let's user save their favourite foods for later reference.
 
-
+## This is a very old work of mine when I was a fresher in Android Development and therefore shows deprecated technologies. Now I use all the latest technologies and trends. 
 This app is made using MVVM Architecture with programming language as Kotlin and the technologies used are retrofit(to connect to api), glide(to Download Images), Room(For Database).
 
 The project contains three parts :- 
